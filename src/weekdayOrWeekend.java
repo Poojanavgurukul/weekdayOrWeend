@@ -5,5 +5,8 @@ public class weekdayOrWeekend {
         System.out.println("Enter the day");
         String userDayInput= userInput.nextLine();
         System.out.println("Day is: "+userDayInput);
+        if (userDayInput=="sunday" || userDayInput=="saturday"){
+            System.out.println("Weekend");
+        }
     }
 }
