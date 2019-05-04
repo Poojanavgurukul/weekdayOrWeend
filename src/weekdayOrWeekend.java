@@ -7,5 +7,8 @@ public class weekdayOrWeekend {
         if (userDayInput.equalsIgnoreCase("sunday")||userDayInput.equalsIgnoreCase("saturday")){
             System.out.println("Weekend");
         }
+        else{
+            System.out.println("WeekDay");
+        }
     }
 }
