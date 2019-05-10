@@ -1,4 +1,4 @@
-public class weekdayOrWeekend {
+public class weekdayOrWeekendChecker {
     public static void main(String[] args) {
         String userDayInput=args[0];
         boolean daySunOrsat = userDayInput.equalsIgnoreCase("sunday") || userDayInput.equalsIgnoreCase("saturday");
