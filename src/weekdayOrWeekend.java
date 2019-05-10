@@ -1,9 +1,6 @@
-import  java.util.Scanner;
 public class weekdayOrWeekend {
     public static void main(String[] args) {
-        Scanner userInput =new Scanner(System.in);
-        System.out.println("Enter the day");
-        String userDayInput= userInput.nextLine();
+        String userDayInput=args[0];
         boolean daySunOrsat = userDayInput.equalsIgnoreCase("sunday") || userDayInput.equalsIgnoreCase("saturday");
         boolean daysMonToFri=userDayInput.equalsIgnoreCase("monday")||userDayInput.equalsIgnoreCase("tuesday")||userDayInput.equalsIgnoreCase("wednesday")||userDayInput.equalsIgnoreCase("thursday")||userDayInput.equalsIgnoreCase("friday");
         if (daySunOrsat){
