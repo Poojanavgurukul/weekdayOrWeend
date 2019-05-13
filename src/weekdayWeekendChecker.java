@@ -1,12 +1,13 @@
+import java.util.*;
 public class weekdayWeekendChecker {
     public static void main(String[] args) {
-        String userDayInput=args[0];
+        String userDayInput=args[0].toLowerCase();
+        HashSet<String>days=new HashSet<String>(List.of("monday","tuesday","wednesday","thursday","Friday"));
         boolean isDaySunsat = userDayInput.equalsIgnoreCase("sunday") || userDayInput.equalsIgnoreCase("saturday");
-        boolean isDaysMonToFri=userDayInput.equalsIgnoreCase("monday")||userDayInput.equalsIgnoreCase("tuesday")||userDayInput.equalsIgnoreCase("wednesday")||userDayInput.equalsIgnoreCase("thursday")||userDayInput.equalsIgnoreCase("friday");
         if (isDaySunsat){
             System.out.println("Weekend");
         }
-        else if(isDaysMonToFri){
+        else if(days.contains(userDayInput)){
             System.out.println("WeekDay");
         }
         else{
