@@ -8,8 +8,7 @@ public class weekdayWeekendChecker {
         days.add("wednesday");
         days.add("thursday");
         days.add("friday");
-        boolean isDayWeekend = userDayInput.contains("sunday")||userDayInput.contains("saturday");
-        if (isDayWeekend){
+        if (isDayWeekend(userDayInput)){
             System.out.println("Weekend");
         }
         else if(days.contains(userDayInput)){
@@ -18,5 +17,9 @@ public class weekdayWeekendChecker {
         else{
             System.out.println("Invalid input");
         }
+    }
+
+    public static boolean isDayWeekend(String userDayInput) {
+        return userDayInput.contains("sunday")||userDayInput.contains("saturday");
     }
 }
