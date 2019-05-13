@@ -1,6 +1,6 @@
- java weekdayOrWeekendChecker.java monday>actual
+ java weekdayWeekendChecker.java monday>actual
  diff expectedOutputForInputmonday actual
- java weekdayOrWeekendChecker.java Saturday>actual
+ java weekdayWeekendChecker.java Saturday>actual
  diff expectedOutputForInputSaturday actual
- java weekdayOrWeekendChecker.java Ishu>actual
+ java weekdayWeekendChecker.java Ishu>actual
   diff expectedOutputForInputIshu actual
