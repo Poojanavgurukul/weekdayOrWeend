@@ -3,8 +3,8 @@ public class weekdayWeekendChecker {
     public static void main(String[] args) {
         String userDayInput=args[0].toLowerCase();
         HashSet<String>days=new HashSet<String>(List.of("monday","tuesday","wednesday","thursday","Friday"));
-        boolean isDaySunsat = userDayInput.equalsIgnoreCase("sunday") || userDayInput.equalsIgnoreCase("saturday");
-        if (isDaySunsat){
+        boolean isDayWeekend = userDayInput.equalsIgnoreCase("sunday") || userDayInput.equalsIgnoreCase("saturday");
+        if (isDayWeekend){
             System.out.println("Weekend");
         }
         else if(days.contains(userDayInput)){
