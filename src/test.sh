@@ -3,4 +3,4 @@
  java weekdayWeekendChecker.java Saturday>actual
  diff expectedOutputForInputSaturday actual
  java weekdayWeekendChecker.java Ishu>actual
-  diff expectedOutputForInputIshu actual
+ diff expectedOutputForInputIshu actual
