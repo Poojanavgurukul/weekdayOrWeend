@@ -7,7 +7,7 @@ public class weekdayWeekendChecker {
         if (isDayWeekend(userDayInput)){
             System.out.println("Weekend");
         }
-        else if(isContainsWeekDay(userDayInput)){
+        else if(isContainWeekDay(userDayInput)){
             System.out.println("WeekDay");
         }
         else{
@@ -15,7 +15,7 @@ public class weekdayWeekendChecker {
         }
     }
 
-    public static boolean isContainsWeekDay(String userDayInput) {
+    public static boolean isContainWeekDay(String userDayInput) {
         Set<String>days=new HashSet<String>();
         days.add("monday");
         days.add("tuesday");

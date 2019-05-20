@@ -11,9 +11,9 @@ public class DaysCheckerTest {
         assertTrue("day is weekend", weekdayWeekendChecker.isDayWeekend("sunday"));
     }
     @Test public void dayIsWeekday(){
-        assertTrue("day is weekday",weekdayWeekendChecker.isContainsWeekDay("monday"));
+        assertTrue("day is weekday",weekdayWeekendChecker.isContainWeekDay("monday"));
     }
     @Test public void invalidInput(){
-        assertFalse("user input is invalid",weekdayWeekendChecker.isContainsWeekDay("pooja"));
+        assertFalse("user input is invalid",weekdayWeekendChecker.isContainWeekDay("pooja"));
     }
 }
