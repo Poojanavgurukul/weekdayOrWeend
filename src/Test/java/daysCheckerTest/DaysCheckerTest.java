@@ -10,7 +10,7 @@ public class DaysCheckerTest {
     @Test public void dayIsWeekend(){
         assertTrue("day is weekend", weekdayWeekendChecker.isDayWeekend("sunday"));
     }
-    @Test public void dayIsWeekday(){
+    @Test public void stringIsWeekday(){
         assertTrue("day is weekday",weekdayWeekendChecker.isContainWeekDay("monday"));
     }
     @Test public void stringIsNotADay(){
